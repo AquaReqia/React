@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from 'react'
 import { createChart, CrosshairMode } from 'lightweight-charts';
 import { useCookies } from 'react-cookie';
 import { Table, Button, Row, Col, Space } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
 
 const columns = [
   {
