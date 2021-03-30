@@ -30,8 +30,6 @@ const columns = [
 const ChildPage = props => {
   const [chartArray, setChartArray] = useState([]);
   const [cookies, setCookie] = useCookies(['keyCookie']);
-  //cookies.apiKeyCookie
-  //cookies.apiSecretKeyCookie
 
   var ws = new WebSocket('wss://stream.binance.com:9443/ws/ethusdt@kline_1m');
   ws.onmessage  = (jsonString) => {
